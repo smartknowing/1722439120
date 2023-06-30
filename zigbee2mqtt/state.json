@@ -5,5 +5,9 @@
         "battery": 100,
         "humidity": 83.55,
         "linkquality": 57
+    },
+    "0x00124b002263095a": {
+        "linkquality": 57,
+        "state": "OFF"
     }
 }

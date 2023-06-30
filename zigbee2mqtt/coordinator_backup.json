@@ -4,7 +4,7 @@
     "version": 1,
     "source": "zigbee-herdsman@0.14.96",
     "internal": {
-      "date": "2023-06-28T16:20:09.281Z",
+      "date": "2023-06-29T16:20:08.839Z",
       "znpVersion": 0
     }
   },
@@ -25,5 +25,11 @@
     "sequence_number": 0,
     "frame_counter": 0
   },
-  "devices": []
+  "devices": [
+    {
+      "nwk_address": "e307",
+      "ieee_address": "00124b002263095a",
+      "is_child": true
+    }
+  ]
 }
