@@ -38,3 +38,5 @@ devices:
     friendly_name: Sensor Temperatura Humedad de la Sala
   '0x00124b002263095a':
     friendly_name: ' Luz del Estudio'
+  '0xf4b3b1fffef8ad53':
+    friendly_name: '0xf4b3b1fffef8ad53'
