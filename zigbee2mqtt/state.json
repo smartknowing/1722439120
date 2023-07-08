@@ -7,7 +7,18 @@
         "linkquality": 57
     },
     "0x00124b002263095a": {
-        "linkquality": 44,
+        "linkquality": 60,
         "state": "ON"
+    },
+    "0xf4b3b1fffef8ad53": {
+        "position": 100,
+        "state": "CLOSE",
+        "work_state": "learning",
+        "battery": 100,
+        "motor_direction": "left",
+        "set_upper_limit": "stop",
+        "opening_mode": "lift",
+        "factory_reset": "S",
+        "linkquality": 65
     }
 }
