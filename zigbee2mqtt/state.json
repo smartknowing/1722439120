@@ -7,7 +7,7 @@
         "linkquality": 57
     },
     "0x00124b002263095a": {
-        "linkquality": 60,
+        "linkquality": 31,
         "state": "ON"
     },
     "0xf4b3b1fffef8ad53": {
@@ -19,6 +19,6 @@
         "set_upper_limit": "stop",
         "opening_mode": "lift",
         "factory_reset": "S",
-        "linkquality": 65
+        "linkquality": 70
     }
 }
