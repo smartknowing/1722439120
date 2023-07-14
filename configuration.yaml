@@ -112,6 +112,9 @@ binary_sensor:
 sensor:
   - platform: demo
   
+cover:
+  - platform: demo
+  
 # http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
 # Para la configuración del acceso desde 
 #una direccion publica
