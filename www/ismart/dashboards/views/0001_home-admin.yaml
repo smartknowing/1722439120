@@ -185,3 +185,12 @@
                 fade: true
               #ulm_card_weather_custom:
               #  - temp: sensor.sensor_temperatura_humedad_de_la_sala_temperature
+    - type: entities
+      title: Cortinas por Zona
+      show_header_toggle: false
+      entities:
+      - entity: cover.cortinas_interior
+        name: Cortinas Interior
+        icon: mdi:curtains-closed
+        tap_action:
+          action: none
