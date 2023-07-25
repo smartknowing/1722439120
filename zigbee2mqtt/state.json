@@ -11,8 +11,8 @@
         "state": "ON"
     },
     "0xf4b3b1fffef8ad53": {
-        "position": 100,
-        "state": "CLOSE",
+        "position": 0,
+        "state": "OPEN",
         "work_state": "learning",
         "battery": 100,
         "motor_direction": "left",
