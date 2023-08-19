@@ -1,75 +1,20 @@
-# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
-#Generacion de codigo uuid
-#https://www.uuidgenerator.net/ P
 homeassistant:
-  name: CAMBIAR-NOMBRE-HOUSE            #A
-  latitude: -0.3261465                  #A
-  longitude: -78.5358938                #A
+  name: STALYN QUISHPE
+  latitude: -0.3263547
+  longitude: -78.5358156
   unit_system: metric
-  time_zone: "America/Guayaquil"
+  time_zone: America/Guayaquil
   packages:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/servicios/
     pack_3: !include_dir_merge_named ismart/integraciones/
-    pack_5: !include_dir_merge_named ismart/principal/Zonas/Interior/
-    pack_6: !include_dir_merge_named ismart/principal/Zonas/Exterior/
-    pack_7: !include_dir_merge_named ismart/principal/Zonas/Interior/Integraciones/
-    pack_8: !include_dir_merge_named ismart/principal/Zonas/Exterior/Integraciones/
-    pack_9: !include_dir_merge_named ismart/principal/Zonas/Interior/Ubicacion/
-    pack_10: !include_dir_merge_named ismart/principal/Zonas/Exterior/Ubicacion/
-
-
-
-######## ########   #######  ##    ## ########    ######## ##    ## ########  
-##       ##     ## ##     ## ###   ##    ##       ##       ###   ## ##     ## 
-##       ##     ## ##     ## ####  ##    ##       ##       ####  ## ##     ## 
-######   ########  ##     ## ## ## ##    ##       ######   ## ## ## ##     ## 
-##       ##   ##   ##     ## ##  ####    ##       ##       ##  #### ##     ## 
-##       ##    ##  ##     ## ##   ###    ##       ##       ##   ### ##     ## 
-##       ##     ##  #######  ##    ##    ##       ######## ##    ## ########  
-
-
 frontend:
   development_repo: /share/frontend
   themes: !include_dir_merge_named themes
-  
-
-   ###    ##     ## ########  #######  ##     ##    ###    ######## #### ########    ###     ######  ####  #######  ##    ## ########  ######  
-  ## ##   ##     ##    ##    ##     ## ###   ###   ## ##      ##     ##       ##    ## ##   ##    ##  ##  ##     ## ###   ## ##       ##    ## 
- ##   ##  ##     ##    ##    ##     ## #### ####  ##   ##     ##     ##      ##    ##   ##  ##        ##  ##     ## ####  ## ##       ##       
-##     ## ##     ##    ##    ##     ## ## ### ## ##     ##    ##     ##     ##    ##     ## ##        ##  ##     ## ## ## ## ######    ######  
-######### ##     ##    ##    ##     ## ##     ## #########    ##     ##    ##     ######### ##        ##  ##     ## ##  #### ##             ## 
-##     ## ##     ##    ##    ##     ## ##     ## ##     ##    ##     ##   ##      ##     ## ##    ##  ##  ##     ## ##   ### ##       ##    ## 
-##     ##  #######     ##     #######  ##     ## ##     ##    ##    #### ######## ##     ##  ######  ####  #######  ##    ## ########  ######  
-
-
-#Cada automatización debe estar en un archivo
 automation generales: !include_dir_list ismart/automatizaciones/generales/
 automation principal: !include_dir_list /ismart/principal/
-automation ui: !include automations.yaml 
-
-
-
- ######   ######  ######## ##    ## ########  ######  
-##    ## ##    ## ##       ###   ## ##       ##    ## 
-##       ##       ##       ####  ## ##       ##       
- ######  ##       ######   ## ## ## ######    ######  
-      ## ##       ##       ##  #### ##             ## 
-##    ## ##    ## ##       ##   ### ##       ##    ## 
- ######   ######  ######## ##    ## ########  ######  
-
-#scene: !include scenes.yaml
+automation ui: !include automations.yaml
 scene: !include_dir_merge_list ismart/scenes/
-
-########  ##          ###    ##    ##  #######     ########  ########  #### ##    ##  ######  #### ########     ###    ##       
-##     ## ##         ## ##   ###   ## ##     ##    ##     ## ##     ##  ##  ###   ## ##    ##  ##  ##     ##   ## ##   ##       
-##     ## ##        ##   ##  ####  ## ##     ##    ##     ## ##     ##  ##  ####  ## ##        ##  ##     ##  ##   ##  ##       
-########  ##       ##     ## ## ## ## ##     ##    ########  ########   ##  ## ## ## ##        ##  ########  ##     ## ##       
-##        ##       ######### ##  #### ##     ##    ##        ##   ##    ##  ##  #### ##        ##  ##        ######### ##       
-##        ##       ##     ## ##   ### ##     ##    ##        ##    ##   ##  ##   ### ##    ##  ##  ##        ##     ## ##       
-##        ######## ##     ## ##    ##  #######     ##        ##     ## #### ##    ##  ######  #### ##        ##     ## ######## 
-
-
 lovelace:
   mode: storage
   dashboards:
@@ -77,79 +22,26 @@ lovelace:
       mode: yaml
       title: FloorPlan
       icon: mdi:home
-      show_in_sidebar: true
-      filename: www/ismart/planos/plano-main.yaml 
- 
-
-
-########     ###     ######  ##     ## ########   #######     ###    ########  ########     ##     ## #### ##    ## #### ##     ##    ###    ##       ####  ######  ########    ###    
-##     ##   ## ##   ##    ## ##     ## ##     ## ##     ##   ## ##   ##     ## ##     ##    ###   ###  ##  ###   ##  ##  ###   ###   ## ##   ##        ##  ##    ##    ##      ## ##   
-##     ##  ##   ##  ##       ##     ## ##     ## ##     ##  ##   ##  ##     ## ##     ##    #### ####  ##  ####  ##  ##  #### ####  ##   ##  ##        ##  ##          ##     ##   ##  
-##     ## ##     ##  ######  ######### ########  ##     ## ##     ## ########  ##     ##    ## ### ##  ##  ## ## ##  ##  ## ### ## ##     ## ##        ##   ######     ##    ##     ## 
-##     ## #########       ## ##     ## ##     ## ##     ## ######### ##   ##   ##     ##    ##     ##  ##  ##  ####  ##  ##     ## ######### ##        ##        ##    ##    ######### 
-##     ## ##     ## ##    ## ##     ## ##     ## ##     ## ##     ## ##    ##  ##     ##    ##     ##  ##  ##   ###  ##  ##     ## ##     ## ##        ##  ##    ##    ##    ##     ## 
-########  ##     ##  ######  ##     ## ########   #######  ##     ## ##     ## ########     ##     ## #### ##    ## #### ##     ## ##     ## ######## ####  ######     ##    ##     ## 
-
-# Se esta utilizando https://ui-lovelace-minimalist.github.io/UI/setup/configuration/#yaml-mode
-# la ruta donde se deben agregar las view es en /config/www/ismart/dashboards/views/
-
-#panel_custom: !include ismart/panels_customs/server_control_panel_custom.yaml
-
-
-
-########  ######## ##     ##  #######  
-##     ## ##       ###   ### ##     ## 
-##     ## ##       #### #### ##     ## 
-##     ## ######   ## ### ## ##     ## 
-##     ## ##       ##     ## ##     ## 
-##     ## ##       ##     ## ##     ## 
-########  ######## ##     ##  #######  
-
-switch:
-  - platform: demo
-
-binary_sensor:
-  - platform: demo
-  
-sensor:
-  - platform: demo
-  
-cover:
-  - platform: demo
-  
-# http://patorjk.com/software/taag/#p=display&f=Banner3&t=Type%20Something%20
-# Para la configuración del acceso desde 
-#una direccion publica
-#y exista un error de Received X-Forwarded-For header from untrusted prox
+      show_in_sidebar: True
+      filename: www/ismart/planos/plano-main.yaml
 http:
-  use_x_forwarded_for: true
-  trusted_proxies:
-    - 172.30.33.0/24
-  ip_ban_enabled: true
+  use_x_forwarded_for: True
+  trusted_proxies: ['172.30.33.0/24']
+  ip_ban_enabled: True
   login_attempts_threshold: 5
-  
-
- ######   #######  ##    ## ######## ####  ######       ######   ######## ##    ## ######## ########     ###    ##       ########  ######  
-##    ## ##     ## ###   ## ##        ##  ##    ##     ##    ##  ##       ###   ## ##       ##     ##   ## ##   ##       ##       ##    ## 
-##       ##     ## ####  ## ##        ##  ##           ##        ##       ####  ## ##       ##     ##  ##   ##  ##       ##       ##       
-##       ##     ## ## ## ## ######    ##  ##   ####    ##   #### ######   ## ## ## ######   ########  ##     ## ##       ######    ######  
-##       ##     ## ##  #### ##        ##  ##    ##     ##    ##  ##       ##  #### ##       ##   ##   ######### ##       ##             ## 
-##    ## ##     ## ##   ### ##        ##  ##    ##     ##    ##  ##       ##   ### ##       ##    ##  ##     ## ##       ##       ##    ## 
- ######   #######  ##    ## ##       ####  ######       ######   ######## ##    ## ######## ##     ## ##     ## ######## ########  ######  
-
-
-# Loads default set of integrations. Do not remove.
-default_config:
-
-# Text to speech
-tts:
-  - platform: google_translate
-
-
+default_config: 
+demo: 
+tts: [{'platform': 'google_translate'}]
 script: !include scripts.yaml
-
-
-
-
-
-
+switch luces_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/switch/
+switch luces_interior_segunda_planta_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/switch/
+sensor temperatura_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Temperatura/
+sensor temperatura_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Temperatura/
+sensor temperatura_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/Temperatura/
+sensor humedad_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Humedad/
+sensor humedad_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Humedad/
+sensor humedad_sala: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Sala/Integraciones/grupos/Humedad/
+cover cortinas_interior: !include_dir_merge_list ismart/principal/Zonas/Interior/Integraciones/grupos/Cortinas/
+cover cortinas_segunda_planta: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Integraciones/grupos/Cortinas/
+cover cortinas_estudio: !include_dir_merge_list ismart/principal/Zonas/Interior/Ubicacion/Segunda-planta/Areas/Estudio/Integraciones/grupos/Cortinas/

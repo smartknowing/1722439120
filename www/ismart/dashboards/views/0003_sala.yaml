@@ -1,0 +1,38 @@
+- title: Sala
+  path: sala
+  icon: mdi:sofa
+  cards:
+  - type: vertical-stack
+    cards:
+    - type: custom:button-card
+      template: card_title
+      name: Bienvenido a
+      label: ISMART
+    - type: horizontal-stack
+      cards:
+      - type: vertical-stack
+        cards:
+        - type: custom:button-card
+          template: card_generic
+          entity: sensor.temperatura_sala
+          variables:
+            ulm_card_generic_name: Temperatura Sala
+            ulm_card_generic_icon: mdi:home-thermometer
+      - type: vertical-stack
+        cards:
+        - type: custom:button-card
+          template: card_generic
+          entity: sensor.humedad_sala
+          variables:
+            ulm_card_generic_name: Humedad Sala
+            ulm_card_generic_icon: mdi:home-thermometer
+  - type: vertical-stack
+    cards:
+    - type: custom:button-card
+      template: custom_card_nik_clock
+      variables:
+        ulm_custom_card_nik_clock_switch: input_boolean.menu_tablet
+        ulm_custom_card_nik_clock_switch_enable: 'false'
+    - type: custom:button-card
+      template: card_scenes_welcome
+      variables: {}

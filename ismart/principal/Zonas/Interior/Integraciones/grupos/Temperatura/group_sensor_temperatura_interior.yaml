@@ -1,0 +1,6 @@
+- platform: group
+  type: mean
+  name: temperatura_interior
+  unique_id: group_sensor_temperatura_interior
+  entities:
+  - sensor.sensor_pared_temperatura_02_zigbee_01_interior_sala

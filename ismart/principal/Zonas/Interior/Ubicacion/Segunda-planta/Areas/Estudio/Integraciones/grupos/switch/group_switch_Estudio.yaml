@@ -1,0 +1,4 @@
+- platform: group
+  name: luces_interior_segunda_planta_estudio
+  entities:
+  - switch.interruptor_simple_techo_luz_00_zigbee_01_interior_estudio

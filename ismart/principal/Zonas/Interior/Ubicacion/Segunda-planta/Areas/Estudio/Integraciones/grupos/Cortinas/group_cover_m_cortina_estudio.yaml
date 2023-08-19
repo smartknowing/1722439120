@@ -1,0 +1,5 @@
+- platform: group
+  name: cortinas_estudio
+  unique_id: group_cover_cortinas_estudio
+  entities:
+  - cover.motor_cortina_pared_m_cortina_01_zigbee_01_interior_estudio
