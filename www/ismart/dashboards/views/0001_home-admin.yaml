@@ -59,7 +59,7 @@
       show_header_toggle: false
       entities:
       - entity: switch.luces_interior_segunda_planta
-        name: Luces Interior Segunda-planta
+        name: Luces Interior Segunda planta
         icon: mdi:lightbulb-group
         tap_action:
           action: none
@@ -74,18 +74,18 @@
       cards:
       - type: custom:button-card
         template: card_person
-        entity: person.children1demos
+        entity: person.man1demo
         variables:
-          ulm_card_person_entity: person.children1demos
+          ulm_card_person_entity: person.man1demo
           ulm_card_person_use_entity_picture: true
           ulm_card_person_icon: mdi:face-woman
         tap_action:
           action: false
       - type: custom:button-card
         template: card_person
-        entity: person.man1demo
+        entity: person.woman1demo
         variables:
-          ulm_card_person_entity: person.man1demo
+          ulm_card_person_entity: person.woman1demo
           ulm_card_person_use_entity_picture: true
           ulm_card_person_icon: mdi:face-woman
         tap_action:
@@ -94,9 +94,9 @@
       cards:
       - type: custom:button-card
         template: card_person
-        entity: person.woman1demo
+        entity: person.children1demos
         variables:
-          ulm_card_person_entity: person.woman1demo
+          ulm_card_person_entity: person.children1demos
           ulm_card_person_use_entity_picture: true
           ulm_card_person_icon: mdi:face-woman
         tap_action:
@@ -151,7 +151,7 @@
           template: card_generic
           entity: sensor.temperatura_interior
           variables:
-            ulm_card_generic_name: Temperatura Interior
+            ulm_card_generic_name: Temp. Interior
             ulm_card_generic_icon: mdi:home-thermometer
       - type: vertical-stack
         cards:
@@ -159,7 +159,7 @@
           template: card_generic
           entity: sensor.humedad_interior
           variables:
-            ulm_card_generic_name: Humedad Interior
+            ulm_card_generic_name: Hum. Interior
             ulm_card_generic_icon: mdi:home-thermometer
     - type: horizontal-stack
       cards:
@@ -169,7 +169,7 @@
           template: card_generic
           entity: sensor.temperatura_segunda_planta
           variables:
-            ulm_card_generic_name: Temperatura Segunda-planta
+            ulm_card_generic_name: Temp. Segundaplanta
             ulm_card_generic_icon: mdi:home-thermometer
       - type: vertical-stack
         cards:
@@ -177,7 +177,7 @@
           template: card_generic
           entity: sensor.humedad_segunda_planta
           variables:
-            ulm_card_generic_name: Humedad Segunda-planta
+            ulm_card_generic_name: Hum. Segundaplanta
             ulm_card_generic_icon: mdi:home-thermometer
     - type: entities
       title: Cortinas por Zona

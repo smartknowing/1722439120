@@ -16,7 +16,7 @@
           template: card_generic
           entity: sensor.temperatura_sala
           variables:
-            ulm_card_generic_name: Temperatura Sala
+            ulm_card_generic_name: Temp. Sala
             ulm_card_generic_icon: mdi:home-thermometer
       - type: vertical-stack
         cards:
@@ -24,7 +24,7 @@
           template: card_generic
           entity: sensor.humedad_sala
           variables:
-            ulm_card_generic_name: Humedad Sala
+            ulm_card_generic_name: Hum. Sala
             ulm_card_generic_icon: mdi:home-thermometer
   - type: vertical-stack
     cards:

@@ -38,6 +38,6 @@ devices:
   '0x00124b002263095a':
     friendly_name: interruptor_simple_techo_luz_00_zigbee_01_interior_estudio
   '0xf4b3b1fffef8ad53':
-    friendly_name: motor_cortina_pared_m_cortina_00_zigbee_01_interior_estudio
+    friendly_name: motor_cortina_pared_m_cortina_01_zigbee_01_interior_estudio
   '0x00124b0025143350':
     friendly_name: Sensor Humedad temperatura Sala

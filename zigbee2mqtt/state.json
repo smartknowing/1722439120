@@ -1,6 +1,6 @@
 {
     "0x00124b002263095a": {
-        "linkquality": 39,
+        "linkquality": 34,
         "state": "ON"
     },
     "0xf4b3b1fffef8ad53": {
@@ -12,13 +12,13 @@
         "set_upper_limit": "stop",
         "opening_mode": "lift",
         "factory_reset": "S",
-        "linkquality": 44
+        "linkquality": 23
     },
     "0x00124b0025143350": {
-        "voltage": 3100,
+        "voltage": 3000,
         "battery": 100,
-        "temperature": 17.61,
-        "humidity": 66.96,
-        "linkquality": 21
+        "temperature": 18.5,
+        "humidity": 68.48,
+        "linkquality": 39
     }
 }
