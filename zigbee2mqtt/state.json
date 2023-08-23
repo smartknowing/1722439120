@@ -1,24 +1,24 @@
 {
     "0x00124b002263095a": {
-        "linkquality": 34,
+        "linkquality": 39,
         "state": "ON"
     },
     "0xf4b3b1fffef8ad53": {
-        "position": 0,
-        "state": "OPEN",
+        "position": 100,
+        "state": "CLOSE",
         "work_state": "learning",
         "battery": 100,
         "motor_direction": "left",
         "set_upper_limit": "stop",
         "opening_mode": "lift",
         "factory_reset": "S",
-        "linkquality": 23
+        "linkquality": 55
     },
     "0x00124b0025143350": {
         "voltage": 3000,
         "battery": 100,
-        "temperature": 18.5,
-        "humidity": 68.48,
-        "linkquality": 39
+        "temperature": 16.26,
+        "humidity": 64.19,
+        "linkquality": 0
     }
 }

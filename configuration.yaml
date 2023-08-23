@@ -4,6 +4,9 @@ homeassistant:
   longitude: -78.5358156
   unit_system: metric
   time_zone: America/Guayaquil
+  customize_glob:
+    "cover.*":
+      assumed_state: true
   packages:
     pack_1: !include_dir_merge_named ismart/config/
     pack_2: !include_dir_merge_named ismart/servicios/
