@@ -17,8 +17,8 @@
     "0x00124b0025143350": {
         "voltage": 3000,
         "battery": 100,
-        "temperature": 19.87,
-        "humidity": 58.51,
+        "temperature": 19.46,
+        "humidity": 62.15,
         "linkquality": 0
     }
 }
